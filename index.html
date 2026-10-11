@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ibrahim Hadejia | Web Dev & Cyber Security</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root{
+  --primary:#0ea5e9; --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);line-height:1.6;}
+.container{width:90%;max-width:1100px;margin:auto;}
+
+/* NAV */
+nav{background:rgba(15,23,42,0.8);backdrop-filter:blur(10px);position:fixed;width:100%;z-index:1000;padding:20px 0;}
+nav .container{display:flex;justify-content:space-between;align-items:center;}
+.logo{font-size:1.5rem;font-weight:700;color:var(--primary);}
+nav ul{display:flex;gap:25px;list-style:none;}
+nav a{color:var(--text);text-decoration:none;font-weight:500;transition:0.3s;}
+nav a:hover{color:var(--primary);}
+
+/* HERO */
+.hero{height:100vh;display:flex;align-items:center;text-align:left;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);}
+.hero h1{font-size:3rem;margin-bottom:10px;}
+.hero h1 span{color:var(--primary);}
+.hero p{color:var(--muted);font-size:1.1rem;margin-bottom:30px;max-width:500px;}
+.btn{background:var(--primary);color:#fff;padding:12px 25px;border-radius:8px;text-decoration:none;font-weight:600;transition:0.3s;display:inline-block;}
+.btn:hover{background:#0284c7;transform:translateY(-2px);}
+.btn-outline{background:transparent;border:2px solid var(--primary);margin-left:10px;}
+
+/* SECTIONS */
+section{padding:80px 0;}
+h2{text-align:center;font-size:2.2rem;margin-bottom:50px;}
+h2 span{color:var(--primary);}
+
+/* ABOUT */
+.about-content{display:flex;gap:40px;align-items:center;flex-wrap:wrap;}
+.about-text{flex:1;}
+.about-text h3{font-size:1.5rem;margin-bottom:15px;}
+
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.skill-card{background:var(--card);padding:20px;border-radius:12px;}
+.skill-card h4{margin-bottom:10px;}
+.bar{background:#334155;height:8px;border-radius:5px;overflow:hidden;}
+.bar-fill{height:100%;background:var(--primary);border-radius:5px;}
+
+/* PROJECTS */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;}
+.project-card{background:var(--card);border-radius:12px;overflow:hidden;transition:0.3s;}
+.project-card:hover{transform:translateY(-5px);}
+.project-info{padding:20px;}
+.project-info h3{margin-bottom:10px;color:var(--primary);}
+.project-links a{color:var(--primary);text-decoration:none;margin-right:15px;font-size:0.9rem;}
+
+/* CONTACT */
+.contact-form{max-width:600px;margin:auto;background:var(--card);padding:30px;border-radius:12px;}
+.contact-form input, .contact-form textarea{width:100%;padding:12px;margin-bottom:15px;border:none;background:#334155;color:#fff;border-radius:8px;outline:none;}
+.contact-form button{width:100%;border:none;cursor:pointer;font-size:1rem;}
+
+/* FOOTER */
+footer{text-align:center;padding:30px 0;background:#0b1222;color:var(--muted);}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav ul{display:none;}
+  .hero h1{font-size:2.2rem;}
+  .about-content{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="logo">Ibrahim.dev</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1 align="center">Hi, I'm <span>Ibrahim Hadejia</span></h1>
+    <p align="center">Web Developer | Cyber Security Enthusiast | Research Assistant. I build secure, data-driven web applications and support research projects.</p>
+    <div align="center"><a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Hire Me</a>
+      </div>
+  </div>
+</section>
+
+<div align="center">
+  <!-- ABOUT -->
+</div>
+<section id="about">
+  <div class="container">
+    <h2 align="center">About <span>Me</span></h2>
+    <div class="about-content">
+      <div class="about-text">
+        <h3 align="justify">Ibrahim Hadejia</h3>
+        <p align="justify">I am passionate about using technology and research to solve real-world problems. I have experience building web apps, conducting data analysis, and supporting research projects.</p>
+<p align="justify"> Weynova Technologies Limited was established with the vision of becoming a leading force in the advancement of innovative technology solutions that address contemporary digital challenges. Under the leadership of its Chief Executive Officer, IB Hadejia, the company has grown into a forward-thinking organization dedicated to delivering excellence across diverse areas of information and communication technology.
+Founded on the principles of innovation, integrity, and professionalism, Weynova Technologies Limited was created to bridge the gap between emerging technologies and practical solutions for businesses, governments, and individuals. The company specializes in Cyber Security, Remote Sensing, Digital Forensics, Software Engineering, Machine Learning, Artificial Intelligence, Networking, and other rapidly evolving technology sectors.
+Recognizing the transformative impact of technology in today's world, Weynova Technologies Limited focuses on designing and implementing cutting-edge solutions that enhance security, improve efficiency, and support informed decision-making. Its range of services includes cyber security assessments and protection, digital forensic investigations, intelligent software development, smart contract development, network infrastructure design and management, remote sensing and geospatial applications, and artificial intelligence solutions tailored to meet specific client needs.Under the visionary leadership of IB Hadejia, the company has cultivated a culture that values continuous learning, research, and innovation. Weynova Technologies Limited remains committed to investing in human capital development, adopting global best practices, and building strategic partnerships that strengthen its capacity to deliver world-class technological solutions.</p>
+        <p align="justify">My background in Cyber Security and Machine Learning helps me build secure and intelligent applications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <h2 align="center">My <span>Skills</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card"><h4 align="center">HTML, CSS, JavaScript</h4><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
+      <div class="skill-card"><h4 align="center">React & Tailwind</h4><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
+      <div class="skill-card"><h4 align="center">Python & ML</h4><div class="bar"><div class="bar-fill" style="width:80%"></div></div></div>
+      <div class="skill-card"><h4 align="center">Cyber Security</h4><div class="bar"><div class="bar-fill" style="width:75%"></div></div></div>
+      <div class="skill-card"><h4 align="center">Data Analysis & Excel</h4><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
+      <div class="skill-card"><h4 align="center">Research & Report Writing</h4><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<div align="center">
+  <!-- PROJECTS -->
+</div>
+<section id="projects">
+  <div class="container">
+    <h2 align="center">My <span>Projects</span></h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-info">
+          <h3 align="center">Phishing Detection System</h3>
+          <p align="center">Machine Learning web app that detects phishing websites in real-time to protect users from cyber attacks.</p>
+          <div class="project-links">
+            <div align="center"><a href="https://ibrahimhadejia.github.io/phishing/"><i class="fas fa-external-link-alt"></i> Demo</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-info">
+          <h3 align="center">Vehicle Type Identification</h3>
+          <p align="center">AI system that identifies vehicle types from images using CNN. Built with Python and TensorFlow.</p>
+          <div class="project-links">
+            <div align="center"><a href=" https://ibrahimhadejia.github.io/vehicle-/index.html"><i class="fas fa-external-link-alt"></i> Demo</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-info">
+          <h3 align="center">Steganography App</h3>
+          <p align="center">Web app to hide secret messages inside images for secure communication. Built with HTML, CSS, JS.</p>
+          <div class="project-links">
+            <div align="center"><a href=" https://ibrahimhadejia.github.io/stego/encryption.html"><i class="fas fa-external-link-alt"></i> Demo</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact <span>Me</span></h2>
+    <form class="contact-form" onSubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p style="text-align:center;margin-top:20px;color:var(--muted)">Email: <a href="mailto:ibhadejiaonly@gmail.com">ibhadejiaonly@gmail.com</a> | Phone: 07036271509</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Ibrahim Muhammad. All Rights Reserved.</p>
+</footer>
+
+<script>
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.onclick = function(e){
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+  }
+});
+
+// Contact form
+function sendMessage(e){
+  e.preventDefault();
+  let name = document.getElementById('name').value;
+  alert('Thank you ' + name + '! Your message has been sent. I will reply you soon.');
+  e.target.reset();
+}
+
+// Animate skill bars on scroll
+window.addEventListener('scroll',()=>{
+  document.querySelectorAll('.bar-fill').forEach(bar=>{
+    let rect = bar.getBoundingClientRect();
+    if(rect.top < window.innerHeight){
+      bar.style.transition = 'width 2s ease';
+    }
+  })
+})
+</script>
+
+</body>
+</html>
